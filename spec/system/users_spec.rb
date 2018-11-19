@@ -47,6 +47,7 @@ describe 'ユーザー管理機能', type: :system do
 
   describe 'アクセス権限のテスト' do
     context 'normal_userがユーザー一覧画面にアクセスしたとき' do
+
       before do
         visit login_path
         fill_in 'session_email', with: normal_user.email
