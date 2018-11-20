@@ -17,6 +17,7 @@ gem 'html2slim'
 gem 'bootstrap'
 gem 'bcrypt', '~> 3.1.7'
 gem 'rails_autolink'
+gem 'ransack'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
