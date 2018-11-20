@@ -5,7 +5,7 @@ h1 タスクの新規登録
 
 - if @task.errors.present?
   ul#error_explanation
-    - task.errors.full_messages.each do |message|
+    - @task.errors.full_messages.each do |message|
       li= message
 
 = form_with model: @task, local: true, url: confirm_new_task_path do |f|
