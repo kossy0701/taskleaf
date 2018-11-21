@@ -71,5 +71,15 @@ describe 'タスク管理機能', type: :system do
         end
       end
     end
+
+    context '新規作成時のタスク名にカンマがあるとき' do
+      let(:task_name) { 'テスト, テスト' }
+
+      it 'カンマを含めることはできませんと表示' do
+        within '#error_explanation' do
+          expect(page).to have_content 'カンマを含めることはできません'
+        end
+      end
+    end
   end
 end
