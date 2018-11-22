@@ -1,4 +1,6 @@
 class Task < ApplicationRecord
+  has_one_attached :image
+
   validates :name, presence: true
   validate :validate_name_not_include_comma
 
