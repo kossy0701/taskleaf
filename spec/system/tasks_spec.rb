@@ -27,7 +27,7 @@ describe 'タスク管理機能', type: :system do
       let(:login_user) { user_b }
 
       it 'ユーザーAが作成したタスクが表示されない' do
-          expect(page).to have_no_content '最初のタスク'
+        expect(page).to have_no_content '最初のタスク'
       end
     end
   end
